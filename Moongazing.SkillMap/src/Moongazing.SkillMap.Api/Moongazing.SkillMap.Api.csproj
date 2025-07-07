@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>f6b80218-03c2-4962-b0f7-3064c35871a6</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GraphQL" Version="8.5.0" />
+    <PackageReference Include="HotChocolate.Abstractions" Version="15.1.7" />
+    <PackageReference Include="HotChocolate.AspNetCore" Version="15.1.7" />
+    <PackageReference Include="HotChocolate.AspNetCore.Playground" Version="10.5.5" />
+    <PackageReference Include="HotChocolate.Data.EntityFramework" Version="15.1.7" />
+    <PackageReference Include="HotChocolate.Types" Version="15.1.7" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.22.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Moongazing.SkillMap.Application\Moongazing.SkillMap.Application.csproj" />
+    <ProjectReference Include="..\Moongazing.SkillMap.Persistence\Moongazing.SkillMap.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>
